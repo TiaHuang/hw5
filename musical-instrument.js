@@ -43,7 +43,7 @@ function setup() {
   oscF.amp(0);
   oscF.start();
 	
-	oscG = new p5.Oscillator();
+  oscG = new p5.Oscillator();
   oscG.setType('sawtooth');
   oscG.freq(freqG);
   oscG.amp(0);
