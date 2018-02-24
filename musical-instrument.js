@@ -30,50 +30,50 @@ function setup() {
 }
   
   oscA = new p5.Oscillator();
-  oscA.setType('sawtooth');
+  oscA.setType('piano');
   oscA.freq(freqA);
   oscA.amp(0);
   oscA.start();
   
   
   oscS = new p5.Oscillator();
-  oscS.setType('sawtooth');
+  oscS.setType('piano');
   oscS.freq(freqS);
   oscS.amp(0);
   oscS.start();
   
   oscD = new p5.Oscillator();
-  oscD.setType('sawtooth');
+  oscD.setType('piano');
   oscD.freq(freqD);
   oscD.amp(0);
   oscD.start();
   
   oscF = new p5.Oscillator();
-  oscF.setType('sawtooth');
+  oscF.setType('piano');
   oscF.freq(freqF);
   oscF.amp(0);
   oscF.start();
 	
 	oscG = new p5.Oscillator();
-  oscG.setType('sawtooth');
+  oscG.setType('piano');
   oscG.freq(freqG);
   oscG.amp(0);
   oscG.start();
   
   oscH = new p5.Oscillator();
-  oscH.setType('sawtooth');
+  oscH.setType('piano');
   oscH.freq(freqH);
   oscH.amp(0);
   oscH.start();
   
   oscJ = new p5.Oscillator();
-  oscJ.setType('sawtooth');
+  oscJ.setType('piano');
   oscJ.freq(freqJ);
   oscJ.amp(0);
   oscJ.start();
   
   oscK = new p5.Oscillator();
-  oscK.setType('sawtooth');
+  oscK.setType('piano');
   oscK.freq(freqK);
   oscK.amp(0);
   oscK.start();
@@ -262,5 +262,3 @@ function keyReleased() {
     playing = false;
   }
 }
-
-
