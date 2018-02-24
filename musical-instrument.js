@@ -11,12 +11,23 @@ var freqK = 523;
 
 var oscA, oscS, oscD, oscF, oscG, oscH, oscJ, oscK;
 
+var x = [];
+var y = [];
+var d = [];
+
 var playing = false;
 
 function setup() {
   createCanvas (500, 500);
   backgroundColor = color(235, 250, 255);
   textAlign(CENTER);
+  
+  for (var i = 0; i < 50; i++){
+    x[i] = random(500);
+    y[i] = random(100, 200);
+    d[i] = random(40);
+    color[i] = color(random(80, 180), random(150, 220), random(200, 230), 90);
+}
   
   oscA = new p5.Oscillator();
   oscA.setType('sawtooth');
@@ -43,7 +54,7 @@ function setup() {
   oscF.amp(0);
   oscF.start();
 	
-  oscG = new p5.Oscillator();
+	oscG = new p5.Oscillator();
   oscG.setType('sawtooth');
   oscG.freq(freqG);
   oscG.amp(0);
@@ -105,6 +116,14 @@ function draw() {
 }
 
 function keyPressed() {
+    for (var i = 0; i < 50; i++){
+    fill(color[i]);
+    noStroke();
+    ellipse(x[i], y[i], d[i]);
+  if (random() < 100){
+    d[i] = random(10, 40);
+  }
+}
 	noStroke();
 	fill (0)
   text('NOW YOU SEE ME', width / 2, 40);
@@ -243,4 +262,5 @@ function keyReleased() {
     playing = false;
   }
 }
+
 
