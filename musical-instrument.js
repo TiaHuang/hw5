@@ -1,4 +1,4 @@
-// I changed the sound from triangle to sawtooth, added a note, changed the frequency to do-re-mi-fa-sol, and the visual to look like sheet music.
+// I changed the sound from triangle to piano, added a few more notes, changed the frequency to do-re-mi-fa-sol, and the visual to look like sheet music and a keyboard. The mouse controls the volumn.
 
 var freqA = 261;
 var freqS = 293;
